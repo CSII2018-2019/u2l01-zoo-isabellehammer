@@ -53,6 +53,18 @@ public class U2L01animal {
 			System.out.println("Weight cannot be 0 or negative. Defaulting to 50 lbs.");
 		}
 	}
+	public void setNumLimbs(int limbs) {
+		if (limbs > 0) {
+			numLimbs = limbs;
+		} else {
+			System.out.println("Your animal must be a worm, slug, or snake of some kind.");
+		}
+	}
+	
+	public String toString() {
+		return "Your animal is " + getHeightFt + " feet tall, weighs " + getWeightLbs + " pounds, "
+				" has " + getNumLimbs + " limbs, and is " + getSkinFurFeathersEtc + " in color.";
+	}
 	
 	
 

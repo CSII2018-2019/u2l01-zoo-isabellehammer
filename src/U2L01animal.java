@@ -14,6 +14,11 @@ public class U2L01animal {
 		setNumLimbs(4);
 	}
 	
+	void setSkinFurFeathersEtc(Color black) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	//overload constructor – can take whatever parameters you like
 	public U2L01animal(int height, int weight, Color sffe, int limbs) {
 		setHeightFt(height);
@@ -62,16 +67,9 @@ public class U2L01animal {
 	}
 	
 	public String toString() {
-		return "Your animal is " + getHeightFt + " feet tall, weighs " + getWeightLbs + " pounds, "
-				" has " + getNumLimbs + " limbs, and is " + getSkinFurFeathersEtc + " in color.";
+		return "Your animal is " + getHeightFt() + " feet tall, weighs " + getWeightLbs() + " pounds, "
+				+ " has " + getNumLimbs() + " limbs, and is " + getSkinFurFeathersEtc() + " in color.";
 	}
 	
-	
-
-	
-	/*  public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}  */
 
 }
